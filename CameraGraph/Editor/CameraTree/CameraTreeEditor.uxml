@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <SplitView fixed-pane-initial-dimension="300">
+        <ui:VisualElement name="left-panel" style="width: auto; opacity: 1;">
+            <ui:Label text="Inspector" display-tooltip-when-elided="true" />
+            <InspectorView style="flex-direction: column;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="width: auto;">
+            <ui:Label text="Node View" display-tooltip-when-elided="true" />
+            <CameraTreeView focusable="true" style="flex-grow: 1; width: auto; flex-shrink: 0;">
+                <uie:Toolbar style="opacity: 1;">
+                    <ui:Button text="Centor" display-tooltip-when-elided="true" name="btnCentor" />
+                    <uie:IntegerField label="InputCameraActionId:" value="0" name="idInput" />
+                    <ui:Button text="DoAction" display-tooltip-when-elided="true" name="btnAction" />
+                    <ui:Label display-tooltip-when-elided="true" name="idLabel" style="justify-content: flex-start; -unity-text-align: middle-center;" />
+                </uie:Toolbar>
+            </CameraTreeView>
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>

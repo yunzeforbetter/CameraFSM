@@ -1,0 +1,272 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6049308442533761917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c66f841d01d2144a192a4ca7fd5527, type: 3}
+  m_Name: BehaviourRotateToAimEvent
+  m_EditorClassIdentifier: 
+  NodeGuid: d8a4c31c-a046-418d-b815-f868667e7d18
+  Position: {x: 364.8, y: 87.2}
+  BehaviourId: 3002
+  CareerMask: -1
+  Describe: "\u65CB\u8F6C\u5230\u76EE\u6807"
+  camEvent:
+    RoateAngle: 284.9076
+    CameraFixTime: 5
+    CameraFixAngle: 40
+    IsIgnoreFixAngle: 0
+    DefaultFightingZoomValue: 4
+    CameraFixCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 5
+        value: 8
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 10
+        value: 4
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    IsIgnoreHeight: 1
+    CameraHeight: 0
+--- !u!114 &-5908380685404843736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a012907516e0f5d4191e28b06f10c5f0, type: 3}
+  m_Name: BehaviourViewChangeEvent
+  m_EditorClassIdentifier: 
+  NodeGuid: 0c31d724-8308-41ae-8530-cb775e5f1f91
+  Position: {x: 580.8, y: 87.2}
+  BehaviourId: 3005
+  CareerMask: -1
+  Describe: "\u76F8\u673A\u6A21\u5F0F\u5207\u6362\u8282\u70B9"
+  camEvent:
+    ChangeTime: 1
+    DefaultZoomValue: 3
+    ViewAngle: 0.504
+    MaxRadius: 5
+    MinRadius: 1
+--- !u!114 &-1670580873057707966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953d0c3afde040147b25154a6185378e, type: 3}
+  m_Name: BehaviourTransRobotEvent
+  m_EditorClassIdentifier: 
+  NodeGuid: bba42351-adf2-4ff7-8a5e-1d502f416d9a
+  Position: {x: 364.8, y: 303.2}
+  BehaviourId: 3004
+  CareerMask: -1
+  Describe: "\u8C03\u6574\u76F8\u673A\u9AD8\u5EA6"
+  camEvent:
+    RoleHeight: 0
+    CamerRigHeight: 0
+    CameraFixTime: 1
+    CameraFixCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 5
+        value: 8
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 10
+        value: 4
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c0b7cefa4d7bb48b90771f64f420aa, type: 3}
+  m_Name: CameraBehaviourData
+  m_EditorClassIdentifier: 
+  NodeDatas:
+  - {fileID: -1670580873057707966}
+  - {fileID: 6350529130439532732}
+  - {fileID: 8296874130028186616}
+  - {fileID: -6049308442533761917}
+  - {fileID: -5908380685404843736}
+  - {fileID: 3437540705283339772}
+  - {fileID: 8798429878245886909}
+--- !u!114 &3437540705283339772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b976f550db93946ae8003db1780a67, type: 3}
+  m_Name: BehaviourChaseTargetForwardEvent
+  m_EditorClassIdentifier: 
+  NodeGuid: 94b81f28-96e6-4067-a7ac-3d7950baa294
+  Position: {x: 168, y: 303.2}
+  BehaviourId: 5001
+  CareerMask: -1
+  Describe: "\u4FEE\u6B63\u76EE\u6807\u6B63\u671D\u5411"
+  camEvent:
+    Speed: 90
+    IsFinishChaseBack: 1
+    IsActiveZoom: 0
+    ZoomTime: 0
+    DefaultZoomValue: 0
+--- !u!114 &6350529130439532732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c6de2dccbde204483413496cc96a78, type: 3}
+  m_Name: BehaviourZoomFromToEvent
+  m_EditorClassIdentifier: 
+  NodeGuid: d4384c11-6f86-4afa-8771-39290946698b
+  Position: {x: 580.8, y: 303.2}
+  BehaviourId: 3006
+  CareerMask: -1
+  Describe: "\u89C6\u8DDD\u7F13\u52A8\u8282\u70B9"
+  camEvent:
+    ZoomCurDis: 0
+    ZoomTargetDis: 0
+    IsHoldZoom: 0
+    ZoomTweenTime: 1
+    TweenCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 5
+        value: 8
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 10
+        value: 4
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+--- !u!114 &8296874130028186616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57e7051b2862534aa9e227f484fef78, type: 3}
+  m_Name: BehaviourChaseBackEvent
+  m_EditorClassIdentifier: 
+  NodeGuid: 4a0482d2-0ee2-473b-be49-4f4da89e0a70
+  Position: {x: 188.8, y: 87.2}
+  BehaviourId: 3001
+  CareerMask: -1
+  Describe: "\u76F8\u673A\u8FFD\u80CC"
+  camEvent:
+    WaitTime: 1
+    RecentTime: 0.5
+--- !u!114 &8798429878245886909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5915b8a6eafbe44dbdde89d567581d6, type: 3}
+  m_Name: BehaviourSuspendEvent
+  m_EditorClassIdentifier: 
+  NodeGuid: 2542d68b-553c-40c8-a56f-740627d9da5c
+  Position: {x: 1.6, y: 25.600002}
+  BehaviourId: 3000
+  CareerMask: -1
+  Describe: "\u76F8\u673A\u6302\u8D77"
