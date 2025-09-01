@@ -81,7 +81,7 @@ MonoBehaviour:
   Child: {fileID: -2700685359594071725}
   Tree: {fileID: 11400000}
   Describe: "\u9707\u5C4F"
-  Duration: 5
+  Duration: 1
   ShakeSensitive: 0.8
 --- !u!114 &11400000
 MonoBehaviour:

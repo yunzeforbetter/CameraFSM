@@ -4,8 +4,8 @@ using CMCameraFramework;
 using UnityEngine;
 
 /// <summary>
-/// ÓÃÀ´ÕÒÑ°Íæ¼ÒµÄÇÅ½ÓÀà
-/// ¿É×ÔĞĞÌæ»»
+/// ç”¨æ¥æ‰¾å¯»ç©å®¶çš„æ¡¥æ¥ç±»
+/// å¯è‡ªè¡Œæ›¿æ¢
 /// </summary>
 public class PlayerViewBridging : MonoSingleton<PlayerViewBridging>
 {
@@ -17,7 +17,7 @@ public class PlayerViewBridging : MonoSingleton<PlayerViewBridging>
     }
     private void Update()
     {
-        //Ïà»ú×´Ì¬»úĞèÒªÖ¡Çı¶¯
+        //ç›¸æœºçŠ¶æ€æœºéœ€è¦å¸§é©±åŠ¨
         CMCameraManager.Instance.UpdateDeltaTime(Time.deltaTime);
     }
 }
