@@ -9,8 +9,11 @@
 ## ✨ 核心特性
 
 ### 🎯 可视化节点编辑器
-[相机行为树编辑器预览](docs/camera_tree.png)
-[相机行为模板编辑器预览](docs/camera_template.png)
+- **相机行为树编辑器预览**:
+![image](docs/camera_tree.png)
+
+- **相机行为模板编辑器预览**:
+![image](docs/camera_template.png)
 
 - **相机行为树编辑器**：基于Unity GraphView的可视化节点编辑系统
 - **相机行为模板编辑器**：创建和管理可复用的相机行为模板
