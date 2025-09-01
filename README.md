@@ -334,7 +334,7 @@ public class CustomCameraNode : CameraAction
 
 如有问题或建议，请通过以下方式联系我们：
 
-- 提交 [Issue](https://github.com/yunzeforbetter/UISystem-Package/issues)
+- 提交 [Issue](https://github.com/yunzeforbetter/CameraFSM/issues)
 
 ---
 
