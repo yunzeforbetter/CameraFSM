@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-namespace GCD.Editor
+namespace Common.Editor
 {
 #if UNITY_EDITOR
     public class ObjectPoolCountSize : MonoBehaviour

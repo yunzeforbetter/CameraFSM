@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using GCD.Game;
+using Common.Game;
 using UnityEngine;
 
 public partial class TimeCallBack : MonoBehaviour

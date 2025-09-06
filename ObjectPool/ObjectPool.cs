@@ -1,8 +1,8 @@
-﻿using GCD.Editor;
+﻿using Common.Editor;
 using System;
 using System.Collections.Generic;
 
-namespace GCD.Game
+namespace Common.Game
 {
     public class ObjectPool<T> where T : class, IDisposable, new()
     {
@@ -46,7 +46,7 @@ namespace GCD.Game
         }
         #endregion
 
-        private readonly Stack<T> mStack;                             //存放对象的池子，用List等动态数组也可以，推荐泛型数组
+        private readonly Stack<T> mStack;      //存放对象的池子，用List等动态数组也可以，推荐泛型数组
 
         /// <summary>
         /// 总容量

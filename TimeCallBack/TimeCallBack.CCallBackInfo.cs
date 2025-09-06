@@ -58,8 +58,6 @@ public partial class TimeCallBack : MonoBehaviour
                 if (eStyle == E_Style.E_Style_Repeat)
                 {
                     bNeedCallBack = true;
-                    //nEndTime = (int)(fDuration * 1000) + System.Environment.TickCount;
-                    // 目的是给EndTime 赋值 [5/8/2019 jkiller]
                     fDuration = m_fDuration;
                     return false;
                 }

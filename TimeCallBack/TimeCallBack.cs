@@ -37,7 +37,7 @@ public partial class TimeCallBack : MonoBehaviour
 
     static private GameObject m_aActionCallBackObj = null;
     List<CCallBackInfo> m_ltCallBack = new List<CCallBackInfo>();
-    List<CCallBackInfo> m_ltFinish = new List<CCallBackInfo>();	// 原本的局部变量，定义为成员变量节省GC yao 20140926
+    List<CCallBackInfo> m_ltFinish = new List<CCallBackInfo>();	// 原本的局部变量，定义为成员变量节省GC
     List<CCallBackInfo> m_ltNeedCallBack = new List<CCallBackInfo>();
     
     float m_fRealTime = 0f;
@@ -250,10 +250,10 @@ public partial class TimeCallBack : MonoBehaviour
         ActionComponent.m_ltCallBack.Add(aInfo);
     }
 
-    // 秒表计时器，设置多少秒后结束，回调消耗总时间 [2/28/2016 任修]
-    // 在结束之前可以不断修改结束时间 [2/28/2016 任修]
-    // 例如：第一次设置5秒后结束并回调， 当进行到第二秒时 再次调用这个接口设置为6秒后结束并回调 那么定时器会在第8秒后回调 消耗用时8秒钟 [2/28/2016 任修]
-    // 设计目的：浮空过程中会被连续再浮空，需要计算整个浮空上升中消耗了多少时间，以后有类似需求可以使用该接口计算总耗时，不需要再自己的类里加成员计算 [2/28/2016 任修]
+    // 秒表计时器，设置多少秒后结束，回调消耗总时间
+    // 在结束之前可以不断修改结束时间
+    // 例如：第一次设置5秒后结束并回调， 当进行到第二秒时 再次调用这个接口设置为6秒后结束并回调 那么定时器会在第8秒后回调 消耗用时8秒钟
+    // 设计目的：浮空过程中会被连续再浮空，需要计算整个浮空上升中消耗了多少时间，以后有类似需求可以使用该接口计算总耗时，不需要再自己的类里加成员计算
     static public void BeginOrUpdateTargetForTotalConsumeTimeCallBack(System.Object iTarget, float fNewSurplusTime, DelegateTotalConsumeTimeCallBack TotalConsumeTimeCallBack = null)
     {
         if (!ActionComponent.enabled)
@@ -270,7 +270,6 @@ public partial class TimeCallBack : MonoBehaviour
             if (lt[i] != null && lt[i].CallBackType == E_CallBackInfoType.E_TotalConsumeTimeCallBack && lt[i].iTarget == iTarget)
             {
                 aInfo = (CTotalConsumeTimeCallBack)lt[i];
-                //aInfo.fSurplus = fNewSurplusTime;
                 aInfo.fDuration = fNewSurplusTime;
                 break;
             }
@@ -281,7 +280,6 @@ public partial class TimeCallBack : MonoBehaviour
             aInfo = ActionComponent.NewInfo<CTotalConsumeTimeCallBack>();
             aInfo.iTarget = iTarget;
             aInfo.fDuration = fNewSurplusTime;
-            //aInfo.fSurplus = fNewSurplusTime;
             aInfo.fTotalConsumeTime = 0;
             aInfo.EventTotalConsumeTimeCallBack = TotalConsumeTimeCallBack;
             aInfo.eStyle = E_Style.E_Style_Once;
